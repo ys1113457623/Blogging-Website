@@ -3,6 +3,7 @@ import Image from 'next/image';
 import urlFor from '../lib/urlFor';
 import { ArrowUpRightIcon } from '@heroicons/react/24/solid';
 import ClientSideRoute from './ClientSideRoute';
+import { Post } from 'common-types';
 
 type Props = {
     posts: Post[];
@@ -44,7 +45,7 @@ function BlogList({posts}: Props) {
                       <div>
                         {post.categories.map((category) => (
                           <div className='bg-[#F7AB0A] text-color text-black px-3 py-1 rounded-full text-sm font-semibold'>
-                            <p>{category.title}</p>
+                            {/* <p>{category.title}</p> */}
                           </div>
                         ))}
                       </div>
